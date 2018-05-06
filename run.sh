@@ -17,4 +17,4 @@ kubectl create secret docker-registry aws-registry \
 	--docker-email=no@email.local
 
 echo "Patching default serviceaccount"
-kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"aws-registry"}]}'
+echo kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"aws-registry"}]}'
