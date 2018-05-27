@@ -25,6 +25,8 @@ spec:
                 value: "YOUR-AWS-ACCOUNT"
               - name: AWS_REGION
                 value: "eu-central-1"
+              - name: NAMESPACES
+                value: "infrastructure live"
               - name: AWS_ACCESS_KEY_ID
                 valueFrom:
                   secretKeyRef:

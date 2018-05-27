@@ -2,7 +2,7 @@ The Docker Image contains the aws-cli and kubectl. It is used to update the AWS 
 
 # Setup
 
-You need to set your credentials in the aws-secrets.yml. Also you need to set your AWS_ACCOUNT and AWS_REGION in ecr-cron.yml.
+You need to set your credentials in the aws-secrets.yml. Also you need to set your AWS_ACCOUNT, AWS_REGION and NAMESPACES in ecr-cron.yml.
 Afterwords run:
 
 	aws.sh
