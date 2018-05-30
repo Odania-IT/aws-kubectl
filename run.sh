@@ -12,10 +12,10 @@ do
 	echo "Working in Namespace ${namespace}"
 	echo
 	echo "Removing previous secret in namespace ${namespace}"
-	echo kubectl --namespace=${namespace} delete secret aws-registry || true
+	kubectl --namespace=${namespace} delete secret aws-registry || true
 
 	echo "Creating new secret in namespace ${namespace}"
-	echo kubectl create secret docker-registry aws-registry \
+	kubectl create secret docker-registry aws-registry \
 		--docker-server=$DOCKER_REGISTRY_SERVER \
 		--docker-username=$DOCKER_USER \
 		--docker-password=$DOCKER_PASSWORD \
