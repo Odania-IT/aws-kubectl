@@ -26,4 +26,4 @@ do
 done
 
 echo "Patching default serviceaccount"
-echo kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"aws-registry"}]}'
+kubectl patch serviceaccount default -p '{"imagePullSecrets":[{"name":"aws-registry"}]}'
