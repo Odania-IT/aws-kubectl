@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: aws-registry-credential-cron
 spec:
-  schedule: "* */8 * * *"
+  schedule: "0 */8 * * *"
   successfulJobsHistoryLimit: 2
   failedJobsHistoryLimit: 2
   jobTemplate:
